@@ -724,47 +724,36 @@ body {
   transform: scale(1.1);
 }
 
-.portfolio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+/* Portfolio Buttons - Always Visible */
+.portfolio-buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  opacity: 0;
-  transition: opacity var(--transition-normal);
-}
-
-.portfolio-card:hover .portfolio-overlay {
-  opacity: 1;
+  gap: 10px;
+  padding: 15px 20px;
+  background: var(--bg-tertiary);
+  border-top: 1px solid var(--glass-border);
 }
 
 .portfolio-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: var(--gradient-primary);
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--gradient-primary);
   color: var(--text-primary);
   text-decoration: none;
-  font-size: 1.1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
   transition: all var(--transition-normal);
-  transform: translateY(20px);
-}
-
-.portfolio-card:hover .portfolio-btn {
-  transform: translateY(0);
 }
 
 .portfolio-btn:hover {
-  transform: scale(1.1);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-glow);
+}
+
+.portfolio-btn i {
+  font-size: 0.9rem;
 }
 
 .portfolio-content {
@@ -1292,6 +1281,5 @@ body {
 }
 
 .portfolio-card:hover .portfolio-preview-img {
-  transform: scale(1.1);
-  opacity: 0.3;
+  transform: scale(1.05);
 }
