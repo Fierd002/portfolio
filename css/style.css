@@ -1159,6 +1159,7 @@ body {
     -ms-overflow-style: none;
     gap: 5px;
     padding: 8px;
+    justify-content: flex-start;
   }
   
   .nav-tabs::-webkit-scrollbar {
