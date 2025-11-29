@@ -11,7 +11,7 @@ Please add the following images to this folder:
    - Format: PNG with transparency preferred
 
 2. **sage-stone-preview.png** - Screenshot of the SAGE & STONE e-commerce website
-   - Source: https://site-vitrine-khaki.vercel.app
+   - Source: https://sage-and-stone.vercel.app
    - Recommended size: 400x200px or similar aspect ratio
 
 3. **educap-preview.png** - Screenshot of the Educap AI Assistant
