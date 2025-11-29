@@ -383,12 +383,15 @@ function initMobileNavSlideHint() {
   
   // Check if mobile
   if (window.innerWidth <= 768 && navTabs) {
+    // Calculate dynamic scroll distance based on container width
+    const scrollDistance = Math.min(navTabs.scrollWidth - navTabs.clientWidth, navTabs.clientWidth * 0.3);
+    
     // Add slide hint class after a short delay
     setTimeout(() => {
       navTabs.classList.add('slide-hint');
       
       // Also physically scroll to show there's more content
-      navTabs.scrollTo({ left: 100, behavior: 'smooth' });
+      navTabs.scrollTo({ left: scrollDistance, behavior: 'smooth' });
       
       setTimeout(() => {
         navTabs.scrollTo({ left: 0, behavior: 'smooth' });

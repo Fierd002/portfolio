@@ -912,11 +912,6 @@ body {
   }
 }
 
-/* Skill progress animation when visible */
-.skill-progress.animate {
-  animation: fillBar 1.5s ease-out forwards;
-}
-
 /* Skill Tags */
 .skills-tags {
   display: flex;
